@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+}
+
+/* Badge Component */
+
+.badge {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #1F2937;
+  border-radius: 4px;
+  background: #F3F4F6;
+  padding: 0.2em 0.857em;
+}
