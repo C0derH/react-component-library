@@ -1,16 +1,20 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
   height: 100vh;
-  margin: 0;
+  margin: 20px;
   padding: 10px;
   display: flex;
   justify-content: center;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
+  background-color: #454545;
 }
-
+.container {
+  margin-bottom: 2em;
+}
 /* Badge Component */
 
 .badge {
@@ -20,4 +24,183 @@ body {
   border-radius: 4px;
   background: #F3F4F6;
   padding: 0.2em 0.857em;
+  width: 67px;
+  height: 24px;
+}
+
+.badge-pill {
+  border-radius: 12px;
+}
+
+/* Banner Component */
+
+.banner {
+  display: flex;
+  column-gap: 12px;
+  padding: 1em;
+  width: 896px;
+  border-radius: 6px;
+}
+
+.banner h4,
+.banner p {
+  font-size: 0.875rem;
+}
+.banner h4 {
+  margin-top: 0;
+  margin-bottom: 0.574em;
+  font-weight: 500;
+}
+
+.banner p {
+  margin: 0;
+}
+.banner-neutral {
+  background-color: #EFF6FF;
+}
+.banner-neutral h4 {
+  color: #1E40AF;
+}
+.banner-neutral p {
+  color: #1C51B9;
+}
+
+.banner-success {
+  background-color: #ECFDF5;
+}
+.banner-success h4 {
+  color: #065F46;
+}
+.banner-success p {
+  color: #047857;
+}
+.banner-warning {
+  background-color: #FFFBEB;
+}
+.banner-error {
+  background-color: #FEF2F2;
+}
+.banner-warning h4,
+.banner-error h4 {
+  color: #92400E;
+}
+.banner-warning p,
+.banner-error p {
+  color: #B45309;
+}
+
+.success-icon {
+  color: #34D399;
+}
+
+.warning-icon {
+  color: #FBBF24;
+}
+
+.error-icon {
+  color: #F87171;
+}
+
+.neutral-icon {
+  color: #60A5FA;
+}
+
+/* Card Component */
+
+.card {
+  width: 336px;
+  height: 176px;
+  padding: 0 1.5em 2em;
+  border-radius: 8px;
+  background: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #FFD700;
+
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+  color: #FFFFFF;
+  position: absolute;
+  top: -20px;
+}
+
+.card-content {
+  text-align: center;
+  margin-top: 1.5em;
+  
+}
+
+/* Testimonial Components */
+
+.testimonial {
+  width: 376px;
+  height: 552px;
+  padding: 4.625em 1em;
+  background-color: #F9FAFB;
+  color: #111827;
+  background-image: url(./assets/images/Pattern.svg);
+  background-repeat: no-repeat;
+  background-position: -30% 160%;
+}
+
+.testimonial-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-quote {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 1.3em;
+}
+.divider-icon {
+  display: none;
+}
+.testimonial-name,
+.testimonial-role {
+  margin: 0;
+}
+.testimonial-role{
+  color: #6B7280;
+}
+
+/* Testimonial Desktop */
+
+@media (min-width:1024px){
+  .testimonial {
+    min-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 0 100%;
+  }
+  .testimonial-logo-container {
+    margin-bottom: 40px;
+  }
+  .testimonial-quote {
+    max-width: 768px;
+    text-align: center;
+  }
+  .divider-icon {
+    display: block;
+  }
+  .testimonial-footer {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
 }
