@@ -68,3 +68,5 @@ FaCheckCircle for success status.
 FaExclamationTriangle for warning status.
 FaTimesCircle for error status.
 FaInfoCircle for neutral status.
+## Scrimba
+    This project was a Scrimba solo project.Designs provided by scrimba. Check out scrimba for Awesome courses [Scrimba](https://scrimba.com/)
